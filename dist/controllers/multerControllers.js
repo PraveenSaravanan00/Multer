@@ -4,7 +4,7 @@ export const uploadFile = async (req, res) => {
         const response = await uploadfileMulter(req);
         res.status(200).json({
             statusCode: 200,
-            statusMessage: "uploaded successfully",
+            statusMessage: "File uploaded successfully",
         });
     }
     catch (error) {
